@@ -1,0 +1,10 @@
+require 'spec_helper'
+ 
+describe MoviesController do
+  describe 'find similar movies' do
+    it 'should be called by the RESTful route associated'
+    it 'should l the model method that looks for similar movies'
+#    it 'should select the Search Results template for rendering'
+#    it 'should make the TMDb search results available to that template'
+  end
+end
