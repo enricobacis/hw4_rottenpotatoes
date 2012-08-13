@@ -20,7 +20,7 @@ describe MoviesController do
       it 'should make the Similar Director results available to that template' do
         movie = Movie.create!(:title => 'RSpec', :rating => 'R', :director => 'me')
         get :similar, { :id => movie.id }
-        assigns(:movies).should eq [movie]
+        assigns(:movies).should == [movie]
       end
     end
     describe 'after not valid search' do
